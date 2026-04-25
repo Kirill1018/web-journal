@@ -51,7 +51,7 @@ $.ajax({
                             </li>`)
                             $.ajax({
                                 type: 'get',
-                                url: `http://localhost:3000/journal/lessBySubj?subject=${response3.Id}`,
+                                url: `http://localhost:3000/journal/lessonsBySubj?subject=${response3.Id}`,
                                 headers: { 'csrf-prot': csrfProt }
                             }).then(message => {
                                 const lessons = message.sort((a, b) => new Date(a.date) - new Date(b.date))

@@ -22,7 +22,7 @@ $.ajax({
         headers: { 'csrf-prot': csrfProt }
     }).then(response4 => $.ajax({
         type: 'get',
-        url: `http://localhost:3000/journal/lessById?id=${response4.lessId}`,
+        url: `http://localhost:3000/journal/lessonById?id=${response4.lessId}`,
         headers: { 'csrf-prot': csrfProt }
     }).then(response5 => $.ajax({
         type: 'get',
